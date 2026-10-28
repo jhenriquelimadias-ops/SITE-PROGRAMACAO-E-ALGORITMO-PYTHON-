@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Exercícios | Programação e Algoritmo</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/estilo.css">
+</head>
+<body>
+
+<nav class="navbar navbar-expand-md navbar-dark sticky-top">
+  <div class="container">
+    <a class="navbar-brand fw-bold" href="index.html"><i class="bi bi-code-slash"></i> PA Python</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu" aria-label="Abrir menu">
+      <span class="navbar-toggler-icon"></span> <span class="text-white ms-1">Menu</span>
+    </button>
+    <div class="collapse navbar-collapse" id="menu">
+      <ul class="navbar-nav ms-auto"><li class="nav-item"><a class="nav-link" href="index.html">Início</a></li><li class="nav-item"><a class="nav-link" href="sobre.html">Sobre</a></li><li class="nav-item"><a class="nav-link" href="conteudos.html">Conteúdos</a></li><li class="nav-item"><a class="nav-link active fw-bold" href="exercicios.html">Exercícios</a></li><li class="nav-item"><a class="nav-link" href="materiais.html">Materiais</a></li><li class="nav-item"><a class="nav-link" href="contato.html">Contato</a></li></ul>
+    </div>
+  </div>
+</nav>
+
+
+<section class="secao">
+  <div class="container">
+    <div class="text-center"><h1 class="titulo-secao">Exercícios</h1></div><p class="text-center lead">Marque uma alternativa em cada questão e clique em Corrigir.</p>
+    <div class="row justify-content-center mt-4"><div class="col-lg-8">
+      <form id="formQuiz">
+      <div class="questao">
+        <h2 class="h5">Questão 1</h2><p>Qual é o resultado de <code>type(3.5)</code> em Python?</p>
+          <div class="form-check"><input class="form-check-input" type="radio" name="q0" id="q0o0" value="0"><label class="form-check-label" for="q0o0">int</label></div>
+          <div class="form-check"><input class="form-check-input" type="radio" name="q0" id="q0o1" value="1"><label class="form-check-label" for="q0o1">str</label></div>
+          <div class="form-check"><input class="form-check-input" type="radio" name="q0" id="q0o2" value="2" data-correta="true"><label class="form-check-label" for="q0o2">float</label></div>
+          <div class="form-check"><input class="form-check-input" type="radio" name="q0" id="q0o3" value="3"><label class="form-check-label" for="q0o3">bool</label></div>
+        <p class="feedback mt-2 mb-0"></p>
+      </div>
+      <div class="questao">
+        <h2 class="h5">Questão 2</h2><p>Qual é o resultado de <code>7 // 2</code>?</p>
+          <div class="form-check"><input class="form-check-input" type="radio" name="q1" id="q1o0" value="0"><label class="form-check-label" for="q1o0">3.5</label></div>
+          <div class="form-check"><input class="form-check-input" type="radio" name="q1" id="q1o1" value="1" data-correta="true"><label class="form-check-label" for="q1o1">3</label></div>
+          <div class="form-check"><input class="form-check-input" type="radio" name="q1" id="q1o2" value="2"><label class="form-check-label" for="q1o2">4</label></div>
+          <div class="form-check"><input class="form-check-input" type="radio" name="q1" id="q1o3" value="3"><label class="form-check-label" for="q1o3">1</label></div>
+        <p class="feedback mt-2 mb-0"></p>
+      </div>
+      <div class="questao">
+        <h2 class="h5">Questão 3</h2><p>O que o código <code>for i in range(3): print(i)</code> mostra na tela?</p>
+          <div class="form-check"><input class="form-check-input" type="radio" name="q2" id="q2o0" value="0"><label class="form-check-label" for="q2o0">1 2 3</label></div>
+          <div class="form-check"><input class="form-check-input" type="radio" name="q2" id="q2o1" value="1"><label class="form-check-label" for="q2o1">1 2</label></div>
+          <div class="form-check"><input class="form-check-input" type="radio" name="q2" id="q2o2" value="2"><label class="form-check-label" for="q2o2">0 1 2 3</label></div>
+          <div class="form-check"><input class="form-check-input" type="radio" name="q2" id="q2o3" value="3" data-correta="true"><label class="form-check-label" for="q2o3">0 1 2</label></div>
+        <p class="feedback mt-2 mb-0"></p>
+      </div>
+      <div class="questao">
+        <h2 class="h5">Questão 4</h2><p>Qual palavra-chave cria uma função em Python?</p>
+          <div class="form-check"><input class="form-check-input" type="radio" name="q3" id="q3o0" value="0"><label class="form-check-label" for="q3o0">function</label></div>
+          <div class="form-check"><input class="form-check-input" type="radio" name="q3" id="q3o1" value="1" data-correta="true"><label class="form-check-label" for="q3o1">def</label></div>
+          <div class="form-check"><input class="form-check-input" type="radio" name="q3" id="q3o2" value="2"><label class="form-check-label" for="q3o2">fun</label></div>
+          <div class="form-check"><input class="form-check-input" type="radio" name="q3" id="q3o3" value="3"><label class="form-check-label" for="q3o3">create</label></div>
+        <p class="feedback mt-2 mb-0"></p>
+      </div>
+        <div class="d-flex gap-2 mb-4">
+          <button type="submit" class="btn btn-principal"><i class="bi bi-check2-circle"></i> Corrigir</button>
+          <button type="reset" class="btn btn-outline-secondary" id="btnRefazer">Refazer</button>
+        </div>
+      </form>
+      <div id="resultado" class="resultado d-none"></div>
+      <div class="card mt-4"><div class="card-body">
+        <h2 class="h5"><i class="bi bi-lightbulb"></i> Desafio</h2>
+        <p class="mb-0">Escreva um programa em Python que leia dois números e mostre qual é o maior. Teste no site <a href="https://www.online-python.com" target="_blank" rel="noopener">online-python.com</a>.</p>
+      </div></div>
+    </div></div>
+  </div>
+</section>
+
+
+<footer id="creditos">
+  <div class="container">
+    <p class="mb-1 fw-bold"><i class="bi bi-code-slash"></i> Programação e Algoritmo</p>
+    <p class="mb-1">Desenvolvido por <strong>José Henrique Lima Dias</strong></p>
+    <p class="mb-1">Imagens: Claude (Anthropic) &bull; Ícones: Bootstrap Icons</p>
+    <small>Tecnologias: HTML5, CSS3, Bootstrap 5 e JavaScript &bull; Python para iniciantes</small>
+  </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,402 @@
+/* =====================================================
+   ESTILO.CSS - Projeto Programação e Algoritmo
+   Este arquivo vem DEPOIS do Bootstrap no HTML:
+   <link rel="stylesheet" href="css/estilo.css">
+   ===================================================== */
+
+
+/* ---------- 1. CORES (variáveis) ----------
+   Para mudar a cor do site inteiro, mude só aqui! */
+:root {
+  --cor-fundo: #F3F2F1;      /* branco acinzentado (fundo) */
+  --cor-claro: #C7C7C9;      /* cinza claro (linhas e bordas) */
+  --cor-cinza: #8B8D92;      /* cinza médio */
+  --cor-destaque: #B23A3A;   /* vermelho (botões e detalhes) */
+  --cor-escura: #2B2C2F;     /* quase preto (menu, rodapé, texto) */
+  --cor-branco: #FFFFFF;
+
+  /* avisa o Bootstrap qual fonte usar */
+  --bs-body-font-family: "Times New Roman", Times, serif;
+}
+
+
+/* ---------- 2. GERAL ---------- */
+body {
+  background-color: var(--cor-fundo);
+  color: var(--cor-escura);
+  font-family: "Times New Roman", Times, serif;   /* fonte do site */
+  font-size: 1.15rem;                             /* Times é pequena, então aumentamos */
+  line-height: 1.7;                               /* espaço entre as linhas */
+}
+
+/* Garante a mesma fonte em botões e formulários */
+button, input, textarea, select, .btn, .form-control, .form-label {
+  font-family: "Times New Roman", Times, serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Times New Roman", Times, serif;
+  color: var(--cor-escura);
+  font-weight: bold;
+}
+
+a {
+  color: var(--cor-destaque);
+  text-decoration: none;
+}
+
+a:hover {
+  color: var(--cor-escura);
+}
+
+img {
+  border-radius: 0 !important;      /* sem cantos arredondados */
+  box-shadow: none !important;
+}
+
+
+/* ---------- 3. MENU (navbar) ---------- */
+.navbar {
+  background-color: var(--cor-escura) !important;
+  padding: 14px 0;
+  border-bottom: 4px solid var(--cor-destaque);    /* faixa vermelha embaixo */
+}
+
+.navbar-brand {
+  color: var(--cor-branco) !important;
+  font-size: 1.4rem;
+  letter-spacing: 1px;
+}
+
+.navbar .nav-link {
+  color: var(--cor-claro);
+  text-transform: uppercase;          /* LETRAS MAIÚSCULAS */
+  letter-spacing: 1.5px;              /* espaço entre as letras */
+  font-size: 0.95rem;
+  margin-left: 18px;
+  padding-bottom: 4px;
+  border-bottom: 3px solid transparent;
+}
+
+.navbar .nav-link:hover {
+  color: var(--cor-branco);
+}
+
+.navbar .nav-link.active {
+  color: var(--cor-branco);
+  border-bottom: 3px solid var(--cor-destaque);    /* página atual */
+}
+
+.navbar-toggler {
+  border: 1px solid var(--cor-claro);
+  border-radius: 0;
+  display: flex;
+  align-items: center;
+}
+
+
+/* ---------- 4. BANNER / CAROUSEL ---------- */
+.carousel-item img {
+  height: 450px;                      /* altura da imagem */
+  object-fit: cover;                  /* corta sem deformar */
+}
+
+.carousel-caption {
+  text-align: left;
+  left: 8%;
+  right: 8%;
+  bottom: 14%;
+}
+
+.banner-texto {
+  background-color: rgba(43, 44, 47, 0.88);        /* fundo escuro transparente */
+  border-left: 6px solid var(--cor-destaque);      /* faixa vermelha */
+  padding: 22px 28px;
+}
+
+.banner-texto h2 {
+  color: var(--cor-branco);
+  margin-bottom: 6px;
+}
+
+
+/* ---------- 5. SEÇÕES E TÍTULOS ---------- */
+.secao {
+  padding: 70px 0;                    /* espaço dentro da seção */
+}
+
+/* seções pares ficam brancas, com fios cinza em cima e embaixo */
+section.secao:nth-of-type(even) {
+  background-color: var(--cor-branco);
+  border-top: 1px solid var(--cor-claro);
+  border-bottom: 1px solid var(--cor-claro);
+}
+
+.titulo-secao {
+  position: relative;
+  display: inline-block;
+  font-size: 2.2rem;
+  padding-bottom: 16px;
+  margin-bottom: 30px;
+}
+
+/* traço vermelho curto embaixo do título */
+.titulo-secao::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  width: 70px;
+  height: 4px;
+  background-color: var(--cor-destaque);
+  transform: translateX(-50%);
+}
+
+
+/* ---------- 6. GRID (organiza os cards em colunas) ----------
+   auto-fit = cria quantas colunas couberem na tela.
+   minmax(260px, 1fr) = cada coluna tem no mínimo 260px. */
+.grade-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 28px;                          /* espaço entre os cards */
+}
+
+
+/* ---------- 7. CARDS ---------- */
+.card {
+  background-color: var(--cor-branco);
+  border: 1px solid var(--cor-claro);
+  border-top: 4px solid var(--cor-escura);         /* faixa escura em cima */
+  border-radius: 0;                                /* cantos retos */
+  box-shadow: none;
+  transition: border-top-color 0.3s, transform 0.3s;
+}
+
+.card:hover {
+  border-top-color: var(--cor-destaque);           /* faixa fica vermelha */
+  transform: translateY(-5px);
+}
+
+.card-title {
+  color: var(--cor-escura);
+}
+
+.text-primary {
+  color: var(--cor-destaque) !important;           /* ícones dos cards */
+}
+
+
+/* ---------- 8. BOTÕES ---------- */
+.btn {
+  border-radius: 0;                   /* botões retos */
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  font-size: 0.9rem;
+}
+
+.btn-principal {
+  background-color: var(--cor-destaque);
+  color: var(--cor-branco);
+  border: 2px solid var(--cor-destaque);
+  padding: 10px 26px;
+}
+
+.btn-principal:hover {
+  background-color: var(--cor-escura);
+  border-color: var(--cor-escura);
+  color: var(--cor-branco);
+}
+
+.btn-outline-primary {
+  color: var(--cor-escura);
+  border: 2px solid var(--cor-escura);
+}
+
+.btn-outline-primary:hover {
+  background-color: var(--cor-escura);
+  border-color: var(--cor-escura);
+  color: var(--cor-branco);
+}
+
+.btn-outline-secondary {
+  color: var(--cor-cinza);
+  border: 2px solid var(--cor-cinza);
+}
+
+.btn-outline-secondary:hover {
+  background-color: var(--cor-cinza);
+  border-color: var(--cor-cinza);
+  color: var(--cor-branco);
+}
+
+
+/* ---------- 9. CÓDIGO PYTHON ---------- */
+pre.bg-dark {
+  background-color: var(--cor-escura) !important;
+  border-left: 5px solid var(--cor-destaque);
+  border-radius: 0 !important;
+}
+
+pre code {
+  font-family: "Courier New", monospace;   /* código fica em fonte de código */
+  font-size: 0.95rem;
+  color: var(--cor-fundo);
+}
+
+/* "code" dentro das perguntas */
+.questao code {
+  color: var(--cor-destaque);
+  font-family: "Courier New", monospace;
+}
+
+
+/* ---------- 10. EXERCÍCIOS ---------- */
+.questao {
+  background-color: var(--cor-branco);
+  padding: 24px;
+  margin-bottom: 22px;
+  border: 1px solid var(--cor-claro);
+  border-left: 6px solid var(--cor-destaque);      /* faixa vermelha */
+}
+
+.form-check-input:checked {
+  background-color: var(--cor-destaque);
+  border-color: var(--cor-destaque);
+}
+
+.resultado {
+  background-color: var(--cor-escura);
+  color: var(--cor-branco);
+  border-top: 5px solid var(--cor-destaque);
+  padding: 22px;
+  text-align: center;
+  font-size: 1.4rem;
+}
+
+.certo  { color: #3D6B4A; font-weight: bold; }   /* verde: acertou */
+.errado { color: var(--cor-destaque); font-weight: bold; }
+
+
+/* ---------- 11. ACORDEÃO ---------- */
+.accordion-item {
+  border-radius: 0;
+  border-color: var(--cor-claro);
+}
+
+.accordion-button {
+  font-size: 1.15rem;
+  font-weight: bold;
+  border-radius: 0 !important;
+}
+
+.accordion-button:not(.collapsed) {
+  background-color: var(--cor-escura);
+  color: var(--cor-branco);
+  box-shadow: none;
+}
+
+.accordion-button:focus {
+  box-shadow: none;
+  border-color: var(--cor-destaque);
+}
+
+
+/* ---------- 12. FORMULÁRIO (contato) ---------- */
+.form-control {
+  padding: 12px;
+  border-radius: 0;
+  border: 1px solid var(--cor-cinza);
+  background-color: var(--cor-branco);
+}
+
+.form-control:focus {
+  border-color: var(--cor-destaque);
+  box-shadow: 0 0 0 3px rgba(178, 58, 58, 0.25);
+}
+
+.alert {
+  border-radius: 0;
+}
+
+
+/* ---------- 13. VÍDEOS E MATERIAIS ---------- */
+.ratio {
+  border-radius: 0;
+}
+
+.list-group-item {
+  border-radius: 0 !important;
+  border-color: var(--cor-claro);
+}
+
+.list-group-item:hover {
+  background-color: var(--cor-claro);
+  color: var(--cor-escura);
+}
+
+
+/* ---------- 14. RODAPÉ ---------- */
+footer {
+  background-color: var(--cor-escura);
+  color: var(--cor-claro);
+  text-align: center;
+  padding: 32px 0;
+  border-top: 4px solid var(--cor-destaque);
+}
+
+footer strong {
+  color: var(--cor-branco);
+}
+
+footer small {
+  color: var(--cor-cinza);
+}
+
+
+/* =====================================================
+   15. RESPONSIVO (adaptação da tela)
+   @media = "só aplique estas regras se a tela for assim".
+   max-width: 768px = tablets e celulares.
+   ===================================================== */
+@media (max-width: 768px) {
+
+  body {
+    font-size: 1.05rem;
+  }
+
+  .carousel-item img {
+    height: 280px;                    /* banner menor no celular */
+  }
+
+  .carousel-caption {
+    left: 4%;
+    right: 4%;
+    bottom: 8%;
+  }
+
+  .banner-texto {
+    padding: 12px 16px;
+  }
+
+  .banner-texto h2 {
+    font-size: 1.2rem;
+  }
+
+  .secao {
+    padding: 40px 0;                  /* menos espaço no celular */
+  }
+
+  .titulo-secao {
+    font-size: 1.6rem;
+  }
+
+  .navbar .nav-link {
+    margin-left: 0;
+    padding: 10px 0;
+  }
+
+  .grade-cards {
+    grid-template-columns: 1fr;       /* 1 card por linha */
+  }
+}

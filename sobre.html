@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Sobre | Programação e Algoritmo</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/estilo.css">
+</head>
+<body>
+
+<nav class="navbar navbar-expand-md navbar-dark sticky-top">
+  <div class="container">
+    <a class="navbar-brand fw-bold" href="index.html"><i class="bi bi-code-slash"></i> PA Python</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu" aria-label="Abrir menu">
+      <span class="navbar-toggler-icon"></span> <span class="text-white ms-1">Menu</span>
+    </button>
+    <div class="collapse navbar-collapse" id="menu">
+      <ul class="navbar-nav ms-auto"><li class="nav-item"><a class="nav-link" href="index.html">Início</a></li><li class="nav-item"><a class="nav-link active fw-bold" href="sobre.html">Sobre</a></li><li class="nav-item"><a class="nav-link" href="conteudos.html">Conteúdos</a></li><li class="nav-item"><a class="nav-link" href="exercicios.html">Exercícios</a></li><li class="nav-item"><a class="nav-link" href="materiais.html">Materiais</a></li><li class="nav-item"><a class="nav-link" href="contato.html">Contato</a></li></ul>
+    </div>
+  </div>
+</nav>
+
+
+<section class="secao">
+  <div class="container">
+    <div class="text-center"><h1 class="titulo-secao">Sobre a disciplina</h1></div><p class="text-center lead">Programação e Algoritmo com Python</p>
+    <div class="row g-4 mt-2">
+      <div class="col-lg-5">
+        <h2 class="h4">Como pensa um programador?</h2>
+        <p>Primeiro entende o problema, depois divide em passos pequenos, escreve o algoritmo e testa. Veja um exemplo simples:</p>
+        <pre class="bg-dark text-white p-3 rounded mb-0"><code># Soma de dois números
+a = 5
+b = 3
+soma = a + b
+print(&quot;Resultado:&quot;, soma)</code></pre>
+      </div>
+      <div class="col-lg-7"><div class="accordion" id="sobreAcc">
+      <div class="accordion-item">
+        <h2 class="accordion-header"><button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#s0">O que é um algoritmo?</button></h2>
+        <div id="s0" class="accordion-collapse collapse show" data-bs-parent="#sobreAcc"><div class="accordion-body">É uma sequência finita de passos para resolver um problema. Uma receita de bolo e as instruções para trocar um pneu são algoritmos. Em programação, ele é escrito em pseudocódigo, fluxograma ou direto em uma linguagem.</div></div>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#s1">O que é Python?</button></h2>
+        <div id="s1" class="accordion-collapse collapse" data-bs-parent="#sobreAcc"><div class="accordion-body">É uma linguagem de programação criada por Guido van Rossum e lançada em 1991. Tem sintaxe simples e legível, o que a torna ótima para quem está começando.</div></div>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#s2">Onde usamos programação?</button></h2>
+        <div id="s2" class="accordion-collapse collapse" data-bs-parent="#sobreAcc"><div class="accordion-body">Sites e aplicativos, jogos, ciência de dados, inteligência artificial, automação de tarefas, robótica, bancos e muito mais.</div></div>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#s3">Curiosidades</button></h2>
+        <div id="s3" class="accordion-collapse collapse" data-bs-parent="#sobreAcc"><div class="accordion-body">O nome Python vem do grupo de comédia Monty Python, e não da cobra. Em Python, a indentação (espaços no início da linha) faz parte da sintaxe.</div></div>
+      </div>
+      </div></div>
+    </div>
+  </div>
+</section>
+
+
+<footer id="creditos">
+  <div class="container">
+    <p class="mb-1 fw-bold"><i class="bi bi-code-slash"></i> Programação e Algoritmo</p>
+    <p class="mb-1">Desenvolvido por <strong>José Henrique Lima Dias</strong></p>
+    <p class="mb-1">Imagens: Claude (Anthropic) &bull; Ícones: Bootstrap Icons</p>
+    <small>Tecnologias: HTML5, CSS3, Bootstrap 5 e JavaScript &bull; Python para iniciantes</small>
+  </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="js/script.js"></script>
+</body>
+</html>

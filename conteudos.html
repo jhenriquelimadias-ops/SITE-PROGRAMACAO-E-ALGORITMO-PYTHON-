@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Conteúdos | Programação e Algoritmo</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/estilo.css">
+</head>
+<body>
+
+<nav class="navbar navbar-expand-md navbar-dark sticky-top">
+  <div class="container">
+    <a class="navbar-brand fw-bold" href="index.html"><i class="bi bi-code-slash"></i> PA Python</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu" aria-label="Abrir menu">
+      <span class="navbar-toggler-icon"></span> <span class="text-white ms-1">Menu</span>
+    </button>
+    <div class="collapse navbar-collapse" id="menu">
+      <ul class="navbar-nav ms-auto"><li class="nav-item"><a class="nav-link" href="index.html">Início</a></li><li class="nav-item"><a class="nav-link" href="sobre.html">Sobre</a></li><li class="nav-item"><a class="nav-link active fw-bold" href="conteudos.html">Conteúdos</a></li><li class="nav-item"><a class="nav-link" href="exercicios.html">Exercícios</a></li><li class="nav-item"><a class="nav-link" href="materiais.html">Materiais</a></li><li class="nav-item"><a class="nav-link" href="contato.html">Contato</a></li></ul>
+    </div>
+  </div>
+</nav>
+
+
+<section class="secao">
+  <div class="container">
+    <div class="text-center"><h1 class="titulo-secao">Conteúdos</h1></div><p class="text-center lead">Os principais tópicos de Programação e Algoritmo</p>
+    <div class="grade-cards mt-4">
+      <div class="card h-100"><div class="card-body">
+        <h2 class="card-title h4"><i class="bi bi-diagram-3"></i> Algoritmos e Lógica</h2>
+        <p class="card-text">Um algoritmo descreve os passos de uma tarefa. Todo algoritmo tem entrada, processamento e saída.</p>
+        <button class="btn btn-principal btn-sm" type="button" data-bs-toggle="collapse" data-bs-target="#f0">Ver código</button>
+        <div class="collapse mt-3" id="f0"><pre class="bg-dark text-white p-3 rounded mb-0"><code># Entrada -&gt; Processamento -&gt; Saída
+nome = input(&quot;Seu nome: &quot;)
+print(&quot;Bem-vindo,&quot;, nome)</code></pre></div>
+      </div></div>
+      <div class="card h-100"><div class="card-body">
+        <h2 class="card-title h4"><i class="bi bi-box"></i> Variáveis e Tipos</h2>
+        <p class="card-text">Variáveis guardam valores. Os tipos básicos são int (inteiro), float (decimal), str (texto) e bool (verdadeiro/falso).</p>
+        <button class="btn btn-principal btn-sm" type="button" data-bs-toggle="collapse" data-bs-target="#f1">Ver código</button>
+        <div class="collapse mt-3" id="f1"><pre class="bg-dark text-white p-3 rounded mb-0"><code>idade = 17          # int
+altura = 1.65       # float
+nome = &quot;Ana&quot;        # str
+maior = idade &gt;= 18 # bool</code></pre></div>
+      </div></div>
+      <div class="card h-100"><div class="card-body">
+        <h2 class="card-title h4"><i class="bi bi-signpost-split"></i> Condicionais</h2>
+        <p class="card-text">Permitem tomar decisões: o programa executa um bloco ou outro conforme a condição.</p>
+        <button class="btn btn-principal btn-sm" type="button" data-bs-toggle="collapse" data-bs-target="#f2">Ver código</button>
+        <div class="collapse mt-3" id="f2"><pre class="bg-dark text-white p-3 rounded mb-0"><code>nota = 8
+if nota &gt;= 7:
+    print(&quot;Aprovado&quot;)
+elif nota &gt;= 5:
+    print(&quot;Recuperação&quot;)
+else:
+    print(&quot;Reprovado&quot;)</code></pre></div>
+      </div></div>
+      <div class="card h-100"><div class="card-body">
+        <h2 class="card-title h4"><i class="bi bi-arrow-repeat"></i> Estruturas de Repetição</h2>
+        <p class="card-text">O for repete uma quantidade conhecida de vezes. O while repete enquanto uma condição for verdadeira.</p>
+        <button class="btn btn-principal btn-sm" type="button" data-bs-toggle="collapse" data-bs-target="#f3">Ver código</button>
+        <div class="collapse mt-3" id="f3"><pre class="bg-dark text-white p-3 rounded mb-0"><code>for i in range(1, 6):
+    print(i)
+
+cont = 0
+while cont &lt; 3:
+    cont += 1</code></pre></div>
+      </div></div>
+      <div class="card h-100"><div class="card-body">
+        <h2 class="card-title h4"><i class="bi bi-list-ul"></i> Listas</h2>
+        <p class="card-text">Uma lista guarda vários valores em uma única variável, e cada item tem uma posição (índice) que começa em 0.</p>
+        <button class="btn btn-principal btn-sm" type="button" data-bs-toggle="collapse" data-bs-target="#f4">Ver código</button>
+        <div class="collapse mt-3" id="f4"><pre class="bg-dark text-white p-3 rounded mb-0"><code>frutas = [&quot;maçã&quot;, &quot;uva&quot;, &quot;pera&quot;]
+frutas.append(&quot;manga&quot;)
+print(frutas[0])
+print(len(frutas))</code></pre></div>
+      </div></div>
+      <div class="card h-100"><div class="card-body">
+        <h2 class="card-title h4"><i class="bi bi-braces"></i> Funções</h2>
+        <p class="card-text">Funções organizam o código em blocos reutilizáveis, com parâmetros e retorno.</p>
+        <button class="btn btn-principal btn-sm" type="button" data-bs-toggle="collapse" data-bs-target="#f5">Ver código</button>
+        <div class="collapse mt-3" id="f5"><pre class="bg-dark text-white p-3 rounded mb-0"><code>def dobro(n):
+    return n * 2
+
+print(dobro(4))   # 8</code></pre></div>
+      </div></div>
+    </div>
+  </div>
+</section>
+
+
+<footer id="creditos">
+  <div class="container">
+    <p class="mb-1 fw-bold"><i class="bi bi-code-slash"></i> Programação e Algoritmo</p>
+    <p class="mb-1">Desenvolvido por <strong>José Henrique Lima Dias</strong></p>
+    <p class="mb-1">Imagens: Claude (Anthropic) &bull; Ícones: Bootstrap Icons</p>
+    <small>Tecnologias: HTML5, CSS3, Bootstrap 5 e JavaScript &bull; Python para iniciantes</small>
+  </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="js/script.js"></script>
+</body>
+</html>
